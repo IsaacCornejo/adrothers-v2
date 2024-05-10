@@ -1,0 +1,57 @@
+.contact {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background-image: url(.././img/background-orange-3.jpg);
+}
+
+.contact > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.us__section > p {
+  text-align: justify;
+}
+
+.social__section > .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.info__section > .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+}
+
+.info__section > p {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .contact > .container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .contact > .container > article {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

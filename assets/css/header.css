@@ -1,0 +1,180 @@
+.operating {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #eba55e;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.operating__p {
+  padding: 1rem 0 0 0;
+}
+
+.header {
+  background-image: url(.././img/hero-image-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  padding: 70px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar__logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav__menu {
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav__menu > a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.action__call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  gap: 3rem;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header-btnContact {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (max-width: 1038px) {
+  .operating__p {
+    font-size: 0.9rem;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .menu__btnOpen {
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+
+  .header__text {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1038px) {
+  .nav__menu {
+    font-size: 1.3rem;
+  }
+
+  .menu__btnOpen,
+  #menuClose {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 100vh;
+  }
+  .topbar__logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .header-btnContact {
+    font-size: 1.7rem;
+  }
+
+  .header__text {
+    font-size: 2rem;
+  }
+}
+
+/* ESTILOS PARA MENU MOBILE */
+
+.nav--mobile {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.nav__menu--mobile {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+}
+
+.mostrar {
+  display: block;
+}
+
+.no-mostrar {
+  display: none;
+}
+
+#menuClose {
+  font-size: 1.3rem;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.team {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-image: url(.././img/background-orange-3.jpg);
+}
+
+.team > .container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.member__name,
+.position {
+  font-size: 0.8rem;
+}
+
+.member__img {
+  width: 100%;
+  border-radius: 100%;
+  border-top: 4px dashed slateblue;
+  border-right: 4px solid slateblue;
+  border-bottom: 4px dashed slateblue;
+  border-left: 4px solid slateblue;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (min-width: 768px) {
+  .member__name,
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .member__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .member__img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+}
