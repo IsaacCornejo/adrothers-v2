@@ -1,58 +1,55 @@
 .services__cards {
-  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
-
 .services__cards > .container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
-.services__cards > h2 {
-  text-align: center;
-}
-
-.card {
-  box-shadow: -1px 1px 25px -3px rgb(201, 128, 55);
-  width: 80%;
+a.card {
   padding: 1rem;
-  z-index: 0;
-}
-
-.card__title {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.card__list {
-  font-size: 1rem;
-  /* list-style-image: url(.././img/check.png); */
-  list-style: none;
-}
-
-.card__list li::before {
-  content: "🔸";
-}
-
-.card__btnContact {
-  width: 70%;
-  margin: 0 auto;
-  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  background-color: #111111;
   border: none;
-  border: 1px solid black;
-  padding: 0.3rem;
-  border-radius: 1rem;
+  cursor: pointer;
+  border-left: 2px solid transparent;
 }
 
-.service__cards__img {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-  margin-top: 2rem;
-  box-shadow: -1px 1px 25px -3px rgb(201, 128, 55);
+.card > p {
+  color: gray;
+}
+
+.card__btnCard {
+  font-size: 1.3rem;
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card:hover {
+  border-left: 2px solid;
+  transition: all 0.3s;
+}
+
+.card:hover > .card__btnCard {
+  transition: all 0.3s;
+}
+
+.card__btnActionCard {
+  width: 50%;
+  background-color: #c95316;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
 }
 
 /* MEDIA QUERYS */
@@ -64,14 +61,25 @@
 }
 
 @media screen and (min-width: 992px) {
+  .services__cards > .container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  a.card,
+  .action-card {
+    width: 30%;
+  }
+
+  .action-card {
+    margin-top: 2rem;
+  }
+
+  .card__btnActionCard {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .services__cards > .container {
-    flex-direction: row;
-  }
-
-  .service__cards__img {
-    width: 40%;
-  }
 }

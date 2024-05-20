@@ -1,45 +1,75 @@
 .services {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
-  background-image: url(.././img/background-orange-3.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.services > h2 {
-  padding-top: 2rem;
+  width: 100%;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
 .services > .container {
-  width: 80%;
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.story {
+  width: 45%;
+  height: 200px;
+  background-image: url(.././img/product-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.info__container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  color: white;
+  transition: background-color 1s ease;
+  overflow: hidden;
 }
 
-.service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.info__container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.service__img {
-  width: 100%;
+.story__name,
+.story__type,
+.story__btn {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+  transition: transform 0.4s ease-out;
+  transform: translateY(20px);
+  font-size: 0.8rem;
 }
 
-.service__title {
-  text-align: center;
-}
-
-.service__btn {
-  width: 100%;
-  font-size: 1.3rem;
-  padding: 0.5rem;
-  font-weight: 500;
+.story__btn {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  width: 50%;
+  background-color: #c95316;
+  color: white;
   border: none;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.info__container:hover .story__name,
+.info__container:hover .story__type,
+.info__container:hover .story__btn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* MEDIA QUERYS */
@@ -48,39 +78,22 @@
 }
 
 @media screen and (min-width: 768px) {
-  .service {
-    width: 80%;
-  }
 }
 
 @media screen and (min-width: 992px) {
-  .services > .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
+  .story {
+    width: 40%;
+    height: 300px;
   }
 
-  .service {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service__title {
-    height: 110px;
-  }
-
-  .service__img {
-    width: 200px;
+  .story__name {
+    font-size: 1.3rem;
   }
 }
 
-@media screen and (min-width: 1250px) {
-  .service__img {
-    width: 280px;
+@media screen and (min-width: 1200px) {
+  .story {
+    width: 20%;
+    height: 400px;
   }
 }

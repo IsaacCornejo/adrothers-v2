@@ -2,35 +2,37 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #eba55e;
+  background-color: black;
   color: white;
   font-weight: bold;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-}
-
-.operating__p {
-  padding: 1rem 0 0 0;
+  z-index: 2;
 }
 
 .header {
-  background-image: url(.././img/hero-image-3.jpg);
+  background-image: url(.././img/intro.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
 .topbar {
-  padding: 70px 20px 0 20px;
+  width: 100%;
+  padding: 35px 20px 10px 20px;
+  background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .topbar__logo {
@@ -69,18 +71,18 @@
   align-items: center;
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 .header-btnContact {
+  margin-top: 3rem;
+  padding: 0.5rem;
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
-  background-color: transparent;
+  background-color: rgb(201, 83, 22);
   border: none;
-  border: 1px solid white;
-  padding: 0.5rem;
   border-radius: 1rem;
 }
 
@@ -129,8 +131,13 @@
   .header {
     height: 100vh;
   }
+
+  .topbar {
+    gap: 200px;
+  }
+
   .topbar__logo {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 

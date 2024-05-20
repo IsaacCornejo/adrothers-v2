@@ -1,0 +1,42 @@
+.clients {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.clients > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.client__logo {
+  width: 30%;
+  transition: transform ease 0.3s;
+}
+
+.client__logo:hover {
+  transform: scale(110%);
+}
+
+@media screen and (min-width: 0) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .client__logo {
+    width: 15%;
+  }
+
+  .client__logo {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
