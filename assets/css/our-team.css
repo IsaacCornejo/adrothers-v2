@@ -20,6 +20,8 @@
 }
 
 .our-team__button {
+  text-align: center;
+  text-decoration: none;
   width: 70%;
   background-color: #c95316;
   color: white;

@@ -53,15 +53,22 @@
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
+  border-bottom: 2px solid transparent;
+  transition: all ease 0.4s;
+}
+
+.nav__menu > a:hover {
+  border-color: orangered;
+  color: orangered;
 }
 
 .action__call {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-grow: 2;
-  gap: 3rem;
 }
 
 .header__text {
