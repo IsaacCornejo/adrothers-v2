@@ -11,43 +11,61 @@
   gap: 2rem;
 }
 
-a.card {
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
-  text-align: left;
-  background-color: #111111;
-  border: none;
-  cursor: pointer;
-  border-left: 2px solid transparent;
-}
-
-.card > p {
-  color: gray;
+.service__card {
+  height: 200px;
+  background-image: url(.././img/product-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .action-card {
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
 }
 
-.card__btnCard {
-  font-size: 1.3rem;
-  width: 40px;
+.info-container {
+  padding: 1rem;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease-out;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.info-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.info-container:hover .service__btn {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+.service__btn {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  width: 50%;
+  background-color: #c95316;
+  color: white;
   border: none;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.card:hover {
-  border-left: 2px solid;
-  transition: all 0.3s;
-}
-
-.card:hover > .card__btnCard {
-  transition: all 0.3s;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.4s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .card__btnActionCard {
@@ -58,6 +76,10 @@ a.card {
   font-weight: bold;
   color: white;
   border: none;
+}
+
+.action-card {
+  overflow: hidden;
 }
 
 /* MEDIA QUERYS */
@@ -75,16 +97,12 @@ a.card {
     flex-wrap: wrap;
   }
 
-  a.card,
+  .service__card,
   .action-card {
-    width: 30%;
+    width: 40%;
   }
 
-  .action-card {
-    margin-top: 2rem;
-  }
-
-  .card__btnActionCard {
+  .service__btn {
     width: 50%;
   }
 }

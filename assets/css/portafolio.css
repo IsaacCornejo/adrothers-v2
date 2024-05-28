@@ -1,11 +1,10 @@
-.services {
+.portafolio {
+  margin-top: 3rem;
   width: 100%;
-  background-color: black;
-  color: white;
   text-align: center;
 }
 
-.services > .container {
+.portafolio > .container {
   width: 100%;
   padding: 3rem 0;
   display: flex;

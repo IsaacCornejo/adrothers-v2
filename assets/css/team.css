@@ -11,6 +11,10 @@
   gap: 3rem;
 }
 
+.team h3 {
+  overflow: hidden;
+}
+
 .member__name,
 .position {
   font-size: 0.8rem;

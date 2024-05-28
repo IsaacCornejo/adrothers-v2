@@ -60,6 +60,11 @@
   font-size: 0.8rem;
 }
 
+.us__section h3,
+.info__section h3 {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 0) {
 }
 
