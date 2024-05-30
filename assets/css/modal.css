@@ -28,6 +28,7 @@
 }
 
 #ventana__description {
+  font-size: 1.2rem;
   text-align: justify;
 }
 
@@ -44,7 +45,21 @@
 }
 
 #ventana__title {
+  font-size: 1.5rem;
   overflow: hidden;
+}
+
+.modal__btn {
+  margin: 1rem 0;
+  display: block;
+  font-size: 1rem;
+  width: 50%;
+  background-color: #c95316;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* MEDIA QUERYS */

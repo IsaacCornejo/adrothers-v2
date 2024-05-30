@@ -18,6 +18,8 @@ const createModal = (info) => {
   <img class="ventana__logo" src="./assets/img/logo.png" alt="logo de ad23rothers">
   <h2 id="ventana__title">${info.titulo}</h2>
   <p id="ventana__description">${info.texto}</p>
+  <a href="https://www.google.com/url?q=https%3A%2F%2Fwa.link%2F3rypy7&sa=D&sntz=1&usg=AOvVaw3IeiL2ko1tu7O-EaqI75sa" target="_blank" class="modal__btn">Contáctanos</a>
+
   </div>
 `;
   ventanaInfo.classList.remove("ocultar__ventana");
